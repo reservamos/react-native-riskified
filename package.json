@@ -1,0 +1,84 @@
+{
+  "name": "react-native-riskified",
+  "version": "1.0.0",
+  "description": "Riskified library for react native projects.",
+  "main": "src/index.js",
+  "license": "MIT",
+  "files": [
+    "src",
+    "lib",
+    "android",
+    "ios",
+    "cpp",
+    "*.podspec",
+    "!ios/build",
+    "!android/build",
+    "!android/gradle",
+    "!android/gradlew",
+    "!android/gradlew.bat",
+    "!android/local.properties",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__",
+    "!**/.*"
+  ],
+  "keywords": [
+    "react-native",
+    "ios",
+    "android",
+    "riskified"
+  ],
+  "repository": "https://github.com/reservamos/react-native-riskified/react-native-riskified",
+  "author": "ErnestoVM <evaldez@reservamos.mx> (https://github.com/reservamos/react-native-riskified)",
+  "bugs": {
+    "url": "https://github.com/reservamos/react-native-riskified/react-native-riskified/issues"
+  },
+  "homepage": "https://github.com/reservamos/react-native-riskified/react-native-riskified#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^3.0.2",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "pod-install": "^0.1.0",
+    "prettier": "^2.0.5",
+    "react": "18.1.0",
+    "react-native": "0.70.6"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@react-native-community",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "quoteProps": "consistent",
+          "singleQuote": true,
+          "tabWidth": 2,
+          "trailingComma": "es5",
+          "useTabs": false
+        }
+      ]
+    }
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ],
+  "prettier": {
+    "quoteProps": "consistent",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "useTabs": false
+  }
+}
