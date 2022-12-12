@@ -5,7 +5,7 @@ Riskified library for react native projects.
 ## Installation
 
 ```sh
-yarn add git+https://github.com/reservamos/react-native-riskified.git#1.0.0
+yarn add git+https://github.com/reservamos/react-native-riskified.git#1.1.0
 ```
 
 ## Requirements
