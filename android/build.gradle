@@ -137,6 +137,7 @@ dependencies {
 
   //Riskified SDK
   implementation 'com.riskified:android-sdk:1.5.+'
+  implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
 
 // From node_modules
 }

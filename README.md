@@ -5,7 +5,7 @@ Riskified library for react native projects.
 ## Installation
 
 ```sh
-yarn add git+https://github.com/reservamos/react-native-riskified.git#1.1.1
+yarn add git+https://github.com/reservamos/react-native-riskified.git#1.2.1
 ```
 
 ## Requirements
@@ -14,6 +14,16 @@ yarn add git+https://github.com/reservamos/react-native-riskified.git#1.1.1
 
 - Android mininal sdk version: 21 - Android Lollipop
 - iOS minimal build target: iOS 12.4
+
+**Advertising ID**
+
+Android 13 (API 33) introduces changes to advertising ID
+Apps that use advertising ID and target Android 13 or later must declare the com.google.android.gms.permission.AD_ID permission in their app manifest. If you don't include this permission, your advertising identifier will be zeroed out, any attempts to access the identifier will receive a string of zeros instead of the identifier. [Learn more](https://support.google.com/googleplay/android-developer/answer/6048248?hl=en)
+
+We'll use this declaration to provide safeguards in Play Console
+If you say that your app uses advertising ID, we will block releases that don't include the `com.google.android.gms.permission.AD_ID` permission in the manifest file when targeting Android 13. When we block these releases, we will remind you to add the permission. If your release doesn't need advertising ID, you'll be able to skip the error and release. You can also update the declaration to turn off advertising ID release errors.
+
+⚠️ Important: please declare within Google Play Console that your app uses the **Advertising ID** in **App Content** section
 
 ## Usage
 
